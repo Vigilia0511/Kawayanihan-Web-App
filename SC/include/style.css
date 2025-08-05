@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 380px; /* A bit smaller max-width */
+}
+
+.login-box {
+    background: transparent;
+    padding: 30px; /* Slightly reduced padding */
+    border-radius: 12px;
+    text-align: center;
+   
+}
+
+.logo-img {
+    width: 160px; /* Adjusted logo size */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px; /* Slightly reduced margin */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px; /* More balanced font size */
+    background: #2b2e33;
+    color: #fff;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #0f730c;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.options a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #143b04;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px; /* Balanced button size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #1e4f0a;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #000;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    margin-top: 15px;
+    color: #b81212;
+    font-weight: bold;
+    font-size: 20px;
+}
+.message1 {
+    margin-top: 15px;
+    color: #009414;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding-top: 50px;
+    }
+
+    .logo-img {
+        width: 140px; /* Slightly reduced logo size */
+    }
+
+    .login-box {
+        padding: 25px;
+        width: 85%;
+        max-width: 330px; /* Reduced max width for mobile */
+    }
+
+    .input-group input {
+        padding: 12px 12px 12px 35px;
+        font-size: 15px; /* Adjusted font size for inputs */
+    }
+
+    .options {
+        font-size: 10px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .signup-text {
+        font-size: 12px;
+    }
+    .message {
+        font-size: 17px;
+    }
+    .message1 {
+        font-size: 17px;
+    }
+}
